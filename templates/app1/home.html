@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - StudentProject{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center mb-5">
+        <h1 class="display-4 mb-4">Welcome to StudentProject</h1>
+        <p class="lead text-muted">A modern Django project with multiple apps</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title text-primary">App1 Features</h5>
+                <p class="card-text">Explore the amazing features of our first application designed to enhance your experience.</p>
+                <a href="{% url 'app1_page' %}" class="btn btn-outline-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title text-success">App2 Features</h5>
+                <p class="card-text">Discover the powerful tools in our second application that will boost your productivity.</p>
+                <a href="{% url 'app2_page' %}" class="btn btn-outline-success">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
